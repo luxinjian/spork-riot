@@ -1,6 +1,6 @@
 class Spork::TestFramework::Riot < Spork::TestFramework
   DEFAULT_PORT = 8988
-  HELPER_FILE = File.join(Dir.pwd, "test/teststrap.rb")
+  HELPER_FILE = File.join(Dir.pwd, "test/test_config.rb")
 
   def run_tests(argv, stderr, stdout)
     $LOAD_PATH << "test" << "."
